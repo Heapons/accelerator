@@ -1153,7 +1153,7 @@ bool Accelerator::SDK_OnLoad(char *error, size_t maxlength, bool late)
 
 	do {
 		char gameconfigError[256];
-		if (!gameconfs->LoadGameConfigFile("accelerator.games", &gameconfig, gameconfigError, sizeof(gameconfigError))) {
+		if (!gameconfs->LoadGameConfigFile("acceleratorx64.games", &gameconfig, gameconfigError, sizeof(gameconfigError))) {
 			smutils->LogMessage(myself, "WARNING: Failed to load gamedata file, console output and command line will not be included in crash reports: %s", gameconfigError);
 			break;
 		}
